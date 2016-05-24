@@ -33,10 +33,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.officialWebsiteLink = new System.Windows.Forms.Button();
+            this.updBtn = new System.Windows.Forms.Button();
+            this.aboutBtn = new System.Windows.Forms.Button();
+            this.docBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.levelList = new System.Windows.Forms.ListBox();
@@ -103,10 +103,10 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.button5);
-            this.groupBox4.Controls.Add(this.button4);
-            this.groupBox4.Controls.Add(this.button1);
-            this.groupBox4.Controls.Add(this.button2);
+            this.groupBox4.Controls.Add(this.officialWebsiteLink);
+            this.groupBox4.Controls.Add(this.updBtn);
+            this.groupBox4.Controls.Add(this.aboutBtn);
+            this.groupBox4.Controls.Add(this.docBtn);
             this.groupBox4.Location = new System.Drawing.Point(498, 7);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(236, 382);
@@ -114,45 +114,49 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Useful links";
             // 
-            // button5
+            // officialWebsiteLink
             // 
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.Location = new System.Drawing.Point(11, 177);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(211, 46);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Official website";
-            this.button5.UseVisualStyleBackColor = true;
+            this.officialWebsiteLink.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.officialWebsiteLink.Location = new System.Drawing.Point(11, 177);
+            this.officialWebsiteLink.Name = "officialWebsiteLink";
+            this.officialWebsiteLink.Size = new System.Drawing.Size(211, 46);
+            this.officialWebsiteLink.TabIndex = 5;
+            this.officialWebsiteLink.Text = "Official website";
+            this.officialWebsiteLink.UseVisualStyleBackColor = true;
+            this.officialWebsiteLink.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button4
+            // updBtn
             // 
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(11, 125);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(211, 46);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Check for updates";
-            this.button4.UseVisualStyleBackColor = true;
+            this.updBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.updBtn.Location = new System.Drawing.Point(11, 125);
+            this.updBtn.Name = "updBtn";
+            this.updBtn.Size = new System.Drawing.Size(211, 46);
+            this.updBtn.TabIndex = 4;
+            this.updBtn.Text = "Check for updates";
+            this.updBtn.UseVisualStyleBackColor = true;
+            this.updBtn.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button1
+            // aboutBtn
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(11, 21);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(211, 46);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "About";
-            this.button1.UseVisualStyleBackColor = true;
+            this.aboutBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.aboutBtn.Location = new System.Drawing.Point(11, 21);
+            this.aboutBtn.Name = "aboutBtn";
+            this.aboutBtn.Size = new System.Drawing.Size(211, 46);
+            this.aboutBtn.TabIndex = 2;
+            this.aboutBtn.Text = "About";
+            this.aboutBtn.UseVisualStyleBackColor = true;
+            this.aboutBtn.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // button2
+            // docBtn
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(11, 73);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(211, 46);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Documentation";
-            this.button2.UseVisualStyleBackColor = true;
+            this.docBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.docBtn.Location = new System.Drawing.Point(11, 73);
+            this.docBtn.Name = "docBtn";
+            this.docBtn.Size = new System.Drawing.Size(211, 46);
+            this.docBtn.TabIndex = 3;
+            this.docBtn.Text = "Documentation";
+            this.docBtn.UseVisualStyleBackColor = true;
+            this.docBtn.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // label3
             // 
@@ -207,7 +211,7 @@
             "level1.lvl"});
             this.levelList.Location = new System.Drawing.Point(11, 56);
             this.levelList.Name = "levelList";
-            this.levelList.Size = new System.Drawing.Size(211, 199);
+            this.levelList.Size = new System.Drawing.Size(211, 251);
             this.levelList.TabIndex = 3;
             // 
             // updateLevelListBtn
@@ -219,6 +223,7 @@
             this.updateLevelListBtn.TabIndex = 2;
             this.updateLevelListBtn.Text = "Refresh";
             this.updateLevelListBtn.UseVisualStyleBackColor = true;
+            this.updateLevelListBtn.Click += new System.EventHandler(this.updateLevelListBtn_Click);
             // 
             // groupBox2
             // 
@@ -305,6 +310,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PascalEngine Launcher";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -324,10 +330,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button officialWebsiteLink;
+        private System.Windows.Forms.Button updBtn;
+        private System.Windows.Forms.Button aboutBtn;
+        private System.Windows.Forms.Button docBtn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ListBox levelList;

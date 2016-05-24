@@ -9,3 +9,4 @@ C:\Users\Sirkadirov\Documents\PascalEngine\PascalEngineLauncher\obj\Debug\Pascal
 C:\Users\Sirkadirov\Documents\PascalEngine\PascalEngineLauncher\obj\Debug\PascalEngineLauncher.pdb
 C:\Users\Sirkadirov\Documents\PascalEngine\PascalEngineLauncher\obj\Debug\PascalEngineLauncher.levelListEditor.resources
 C:\Users\Sirkadirov\Documents\PascalEngine\PascalEngineLauncher\obj\Debug\PascalEngineLauncher.addLvlItemWnd.resources
+C:\Users\Sirkadirov\Documents\PascalEngine\PascalEngineLauncher\obj\Debug\PascalEngineLauncher.AboutWnd.resources

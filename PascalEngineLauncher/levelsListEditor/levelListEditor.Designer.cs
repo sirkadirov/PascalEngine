@@ -87,6 +87,7 @@
             // cancelBtn
             // 
             this.cancelBtn.BackColor = System.Drawing.Color.DarkRed;
+            this.cancelBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancelBtn.Dock = System.Windows.Forms.DockStyle.Right;
             this.cancelBtn.ForeColor = System.Drawing.Color.White;
             this.cancelBtn.Location = new System.Drawing.Point(249, 0);
