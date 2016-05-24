@@ -1,0 +1,12 @@
+C:\Users\Sirkadirov\Desktop\PAS_SRC\Projects\gameengine\LevelEditor\bin\x64\Debug\LevelEditor.exe
+C:\Users\Sirkadirov\Desktop\PAS_SRC\Projects\gameengine\LevelEditor\bin\x64\Debug\LevelEditor.pdb
+C:\Users\Sirkadirov\Desktop\PAS_SRC\Projects\gameengine\LevelEditor\bin\x64\Debug\Controls.dll
+C:\Users\Sirkadirov\Desktop\PAS_SRC\Projects\gameengine\LevelEditor\obj\x64\Debug\LevelEditor.AboutWnd.resources
+C:\Users\Sirkadirov\Desktop\PAS_SRC\Projects\gameengine\LevelEditor\obj\x64\Debug\LevelEditor.LevelEditorMainWindow.resources
+C:\Users\Sirkadirov\Desktop\PAS_SRC\Projects\gameengine\LevelEditor\obj\x64\Debug\LevelEditor.lineControl.resources
+C:\Users\Sirkadirov\Desktop\PAS_SRC\Projects\gameengine\LevelEditor\obj\x64\Debug\LevelEditor.NewMapWizard.resources
+C:\Users\Sirkadirov\Desktop\PAS_SRC\Projects\gameengine\LevelEditor\obj\x64\Debug\LevelEditor.Properties.Resources.resources
+C:\Users\Sirkadirov\Desktop\PAS_SRC\Projects\gameengine\LevelEditor\obj\x64\Debug\LevelEditor.csproj.GenerateResource.Cache
+C:\Users\Sirkadirov\Desktop\PAS_SRC\Projects\gameengine\LevelEditor\obj\x64\Debug\LevelEditor.exe
+C:\Users\Sirkadirov\Desktop\PAS_SRC\Projects\gameengine\LevelEditor\obj\x64\Debug\LevelEditor.pdb
+C:\Users\Sirkadirov\Desktop\PAS_SRC\Projects\gameengine\LevelEditor\obj\x64\Debug\LevelEditor.csprojResolveAssemblyReference.cache
