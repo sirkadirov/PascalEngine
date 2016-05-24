@@ -12,3 +12,13 @@ C:\Users\Sirkadirov\Desktop\PAS_SRC\Projects\gameengine\LevelEditor\obj\Debug\Le
 C:\Users\Sirkadirov\Desktop\PAS_SRC\Projects\gameengine\LevelEditor\obj\Debug\LevelEditor.lineControl.resources
 C:\Users\Sirkadirov\Documents\PascalEngine\LevelEditor\obj\Debug\LevelEditor.exe
 C:\Users\Sirkadirov\Documents\PascalEngine\LevelEditor\obj\Debug\LevelEditor.pdb
+C:\Users\Sirkadirov\Documents\PascalEngine\LevelEditor\bin\Debug\LevelEditor.exe
+C:\Users\Sirkadirov\Documents\PascalEngine\LevelEditor\bin\Debug\LevelEditor.pdb
+C:\Users\Sirkadirov\Documents\PascalEngine\LevelEditor\bin\Debug\Controls.dll
+C:\Users\Sirkadirov\Documents\PascalEngine\LevelEditor\obj\Debug\LevelEditor.csprojResolveAssemblyReference.cache
+C:\Users\Sirkadirov\Documents\PascalEngine\LevelEditor\obj\Debug\LevelEditor.AboutWnd.resources
+C:\Users\Sirkadirov\Documents\PascalEngine\LevelEditor\obj\Debug\LevelEditor.LevelEditorMainWindow.resources
+C:\Users\Sirkadirov\Documents\PascalEngine\LevelEditor\obj\Debug\LevelEditor.lineControl.resources
+C:\Users\Sirkadirov\Documents\PascalEngine\LevelEditor\obj\Debug\LevelEditor.NewMapWizard.resources
+C:\Users\Sirkadirov\Documents\PascalEngine\LevelEditor\obj\Debug\LevelEditor.Properties.Resources.resources
+C:\Users\Sirkadirov\Documents\PascalEngine\LevelEditor\obj\Debug\LevelEditor.csproj.GenerateResource.Cache
