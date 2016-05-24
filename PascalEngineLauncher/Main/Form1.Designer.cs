@@ -38,22 +38,14 @@
             this.aboutBtn = new System.Windows.Forms.Button();
             this.docBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.levelList = new System.Windows.Forms.ListBox();
-            this.updateLevelListBtn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
             this.openLevelEditorBtn = new System.Windows.Forms.Button();
             this.openLevelListEditorBtn = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.newLevelBtn = new System.Windows.Forms.Button();
-            this.openLevelBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -92,9 +84,7 @@
             this.panel2.AutoScroll = true;
             this.panel2.Controls.Add(this.groupBox4);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.groupBox3);
             this.panel2.Controls.Add(this.groupBox2);
-            this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 100);
             this.panel2.Name = "panel2";
@@ -107,7 +97,7 @@
             this.groupBox4.Controls.Add(this.updBtn);
             this.groupBox4.Controls.Add(this.aboutBtn);
             this.groupBox4.Controls.Add(this.docBtn);
-            this.groupBox4.Location = new System.Drawing.Point(498, 7);
+            this.groupBox4.Location = new System.Drawing.Point(256, 7);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(236, 382);
             this.groupBox4.TabIndex = 13;
@@ -167,78 +157,21 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "Kadirov Yurij\'s project. Licensed under GNU GPL v3.0";
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.levelList);
-            this.groupBox3.Controls.Add(this.updateLevelListBtn);
-            this.groupBox3.Location = new System.Drawing.Point(256, 7);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(236, 382);
-            this.groupBox3.TabIndex = 11;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "All levels";
-            // 
-            // levelList
-            // 
-            this.levelList.FormattingEnabled = true;
-            this.levelList.Items.AddRange(new object[] {
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl",
-            "level1.lvl"});
-            this.levelList.Location = new System.Drawing.Point(11, 56);
-            this.levelList.Name = "levelList";
-            this.levelList.Size = new System.Drawing.Size(211, 251);
-            this.levelList.TabIndex = 3;
-            // 
-            // updateLevelListBtn
-            // 
-            this.updateLevelListBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.updateLevelListBtn.Location = new System.Drawing.Point(11, 21);
-            this.updateLevelListBtn.Name = "updateLevelListBtn";
-            this.updateLevelListBtn.Size = new System.Drawing.Size(211, 29);
-            this.updateLevelListBtn.TabIndex = 2;
-            this.updateLevelListBtn.Text = "Refresh";
-            this.updateLevelListBtn.UseVisualStyleBackColor = true;
-            this.updateLevelListBtn.Click += new System.EventHandler(this.updateLevelListBtn_Click);
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.openLevelEditorBtn);
             this.groupBox2.Controls.Add(this.openLevelListEditorBtn);
-            this.groupBox2.Location = new System.Drawing.Point(14, 143);
+            this.groupBox2.Location = new System.Drawing.Point(14, 7);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(236, 246);
+            this.groupBox2.Size = new System.Drawing.Size(236, 382);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tools";
             // 
             // button3
             // 
+            this.button3.Enabled = false;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.Location = new System.Drawing.Point(11, 125);
             this.button3.Name = "button3";
@@ -256,6 +189,7 @@
             this.openLevelEditorBtn.TabIndex = 2;
             this.openLevelEditorBtn.Text = "Level editor";
             this.openLevelEditorBtn.UseVisualStyleBackColor = true;
+            this.openLevelEditorBtn.Click += new System.EventHandler(this.openLevelEditorBtn_Click);
             // 
             // openLevelListEditorBtn
             // 
@@ -267,37 +201,6 @@
             this.openLevelListEditorBtn.Text = "Level list editor";
             this.openLevelListEditorBtn.UseVisualStyleBackColor = true;
             this.openLevelListEditorBtn.Click += new System.EventHandler(this.openLevelListEditorBtn_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.newLevelBtn);
-            this.groupBox1.Controls.Add(this.openLevelBtn);
-            this.groupBox1.Location = new System.Drawing.Point(14, 7);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(236, 130);
-            this.groupBox1.TabIndex = 9;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Level editor";
-            // 
-            // newLevelBtn
-            // 
-            this.newLevelBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.newLevelBtn.Location = new System.Drawing.Point(11, 21);
-            this.newLevelBtn.Name = "newLevelBtn";
-            this.newLevelBtn.Size = new System.Drawing.Size(211, 46);
-            this.newLevelBtn.TabIndex = 2;
-            this.newLevelBtn.Text = "New level";
-            this.newLevelBtn.UseVisualStyleBackColor = true;
-            // 
-            // openLevelBtn
-            // 
-            this.openLevelBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.openLevelBtn.Location = new System.Drawing.Point(11, 73);
-            this.openLevelBtn.Name = "openLevelBtn";
-            this.openLevelBtn.Size = new System.Drawing.Size(211, 46);
-            this.openLevelBtn.TabIndex = 3;
-            this.openLevelBtn.Text = "Open level";
-            this.openLevelBtn.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -316,9 +219,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.groupBox4.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -335,16 +236,10 @@
         private System.Windows.Forms.Button aboutBtn;
         private System.Windows.Forms.Button docBtn;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ListBox levelList;
-        private System.Windows.Forms.Button updateLevelListBtn;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button openLevelEditorBtn;
         private System.Windows.Forms.Button openLevelListEditorBtn;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button newLevelBtn;
-        private System.Windows.Forms.Button openLevelBtn;
     }
 }
 

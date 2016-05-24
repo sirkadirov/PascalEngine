@@ -62,10 +62,9 @@ namespace PascalEngineLauncher
             Process.Start(new ProcessStartInfo("https://github.com/sirkadirov/PascalEngine/releases"));
         }
 
-        private void updateLevelListBtn_Click(object sender, EventArgs e)
+        private void openLevelEditorBtn_Click(object sender, EventArgs e)
         {
-            levelList.Items.Clear();
-            Directory.GetFiles(Environment.CurrentDirectory, "*.dat", SearchOption.TopDirectoryOnly);
+            Process.Start(new ProcessStartInfo("LevelEditor.exe"));
         }
     }
 }

@@ -58,8 +58,8 @@
             // wizard
             // 
             this.wizard.Controls.Add(this.prefsPage);
-            this.wizard.Controls.Add(this.welcomePage);
             this.wizard.Controls.Add(this.wizardPage1);
+            this.wizard.Controls.Add(this.welcomePage);
             this.wizard.HeaderImage = global::LevelEditor.Properties.Resources.Blaise_Pascal;
             this.wizard.Location = new System.Drawing.Point(0, 0);
             this.wizard.Name = "wizard";
@@ -311,12 +311,10 @@
         private CristiPotlog.Controls.Wizard wizard;
         private CristiPotlog.Controls.WizardPage welcomePage;
         private CristiPotlog.Controls.WizardPage prefsPage;
-        private System.Windows.Forms.TextBox mapName;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown mapWidth;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown mapHeight;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button browseMapSaveDirBtn;
@@ -327,5 +325,7 @@
         private CristiPotlog.Controls.WizardPage wizardPage1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.NumericUpDown mapHeight;
+        public System.Windows.Forms.TextBox mapName;
     }
 }

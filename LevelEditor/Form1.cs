@@ -80,10 +80,22 @@ namespace LevelEditor
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Creating a new map
-            NewMapWizard newMapWiz = new NewMapWizard();
-            if(newMapWiz.ShowDialog(this) != DialogResult.Cancel)
+            try
             {
-                MessageBox.Show("Success!");
+                NewMapWizard newMapWiz = new NewMapWizard();
+                if (newMapWiz.ShowDialog(this) != DialogResult.Cancel)
+                {
+                    string[] allLines = new string[Convert.ToInt32(newMapWiz.mapHeight.Value)];
+                    for (int i = 0; i <= Convert.ToInt32(newMapWiz.mapHeight.Value-1); i++)
+                        allLines[i] = "                                        ";
+                    File.WriteAllLines(newMapWiz.mapName.Text + ".lvl", allLines);
+                    OpenLevel(newMapWiz.mapName.Text + ".lvl");
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "EXCEPTION CATCHED!", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                Application.Restart();
             }
         }
 
