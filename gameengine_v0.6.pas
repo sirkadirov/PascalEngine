@@ -41,6 +41,7 @@ begin
 	if graphresult<>0 then halt;
 	cleardevice();
 	//Splashscreen
+	PlaySoundFile('01.mp3');
 	setcolor(red);
 	settextstyle(0,0,7);
 	outtextxy(20,20,'PascalEngine');

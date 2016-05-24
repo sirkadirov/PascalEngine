@@ -10,3 +10,5 @@ C:\Users\Sirkadirov\Desktop\PAS_SRC\Projects\gameengine\LevelEditor\obj\Debug\Le
 C:\Users\Sirkadirov\Desktop\PAS_SRC\Projects\gameengine\LevelEditor\bin\Debug\Controls.dll
 C:\Users\Sirkadirov\Desktop\PAS_SRC\Projects\gameengine\LevelEditor\obj\Debug\LevelEditor.NewMapWizard.resources
 C:\Users\Sirkadirov\Desktop\PAS_SRC\Projects\gameengine\LevelEditor\obj\Debug\LevelEditor.lineControl.resources
+C:\Users\Sirkadirov\Documents\PascalEngine\LevelEditor\obj\Debug\LevelEditor.exe
+C:\Users\Sirkadirov\Documents\PascalEngine\LevelEditor\obj\Debug\LevelEditor.pdb
