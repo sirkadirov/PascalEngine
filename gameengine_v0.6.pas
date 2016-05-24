@@ -98,7 +98,7 @@ begin
 						//Wall
 						'#':begin
 							//setcolor(brown);
-							setcolor(lightblue);
+							setcolor(green);
 							rectangle(j*20-20,i*20-20+40,j*20,i*20+40);
 							rectangle(j*20-15,i*20-20+50,j*20-5,i*20+30);
 							delay(1);

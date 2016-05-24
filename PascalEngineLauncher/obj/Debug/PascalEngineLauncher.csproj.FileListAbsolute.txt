@@ -1,0 +1,11 @@
+C:\Users\Sirkadirov\Documents\PascalEngine\PascalEngineLauncher\bin\Debug\PascalEngineLauncher.exe.config
+C:\Users\Sirkadirov\Documents\PascalEngine\PascalEngineLauncher\bin\Debug\PascalEngineLauncher.exe
+C:\Users\Sirkadirov\Documents\PascalEngine\PascalEngineLauncher\bin\Debug\PascalEngineLauncher.pdb
+C:\Users\Sirkadirov\Documents\PascalEngine\PascalEngineLauncher\obj\Debug\PascalEngineLauncher.csprojResolveAssemblyReference.cache
+C:\Users\Sirkadirov\Documents\PascalEngine\PascalEngineLauncher\obj\Debug\PascalEngineLauncher.Form1.resources
+C:\Users\Sirkadirov\Documents\PascalEngine\PascalEngineLauncher\obj\Debug\PascalEngineLauncher.Properties.Resources.resources
+C:\Users\Sirkadirov\Documents\PascalEngine\PascalEngineLauncher\obj\Debug\PascalEngineLauncher.csproj.GenerateResource.Cache
+C:\Users\Sirkadirov\Documents\PascalEngine\PascalEngineLauncher\obj\Debug\PascalEngineLauncher.exe
+C:\Users\Sirkadirov\Documents\PascalEngine\PascalEngineLauncher\obj\Debug\PascalEngineLauncher.pdb
+C:\Users\Sirkadirov\Documents\PascalEngine\PascalEngineLauncher\obj\Debug\PascalEngineLauncher.levelListEditor.resources
+C:\Users\Sirkadirov\Documents\PascalEngine\PascalEngineLauncher\obj\Debug\PascalEngineLauncher.addLvlItemWnd.resources
