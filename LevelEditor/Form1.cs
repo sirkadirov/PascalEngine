@@ -13,23 +13,12 @@ namespace LevelEditor
     public partial class LevelEditorMainWindow : Form
     {
         public static string levelFileName = null;
+        public static TextBox tmpActiveTB;
+        public static int width = 40;
 
         public LevelEditorMainWindow()
         {
             InitializeComponent();
-        }
-
-        enum EntityType
-        {
-            wall,
-            spawnpoint,
-            money,
-            xp,
-            water,
-            bot_horizontal,
-            bot_vertical,
-            bot_advanced,
-            easteregg_money
         }
 
         private void OpenLevel(string fileName)
@@ -40,8 +29,8 @@ namespace LevelEditor
                 mapEditor.Controls.Clear();
                 string[] levelLines = File.ReadAllLines(fileName, Encoding.UTF8);
                 levelFileName = fileName.ToString();
-                int maxLineSize = 59;
-                if (maxLineSize != 59)
+                int maxLineSize = 40;
+                if (maxLineSize != 40)
                     throw new Exception("Lines in opened file is too short or too big. Their required size is 59 characters.");
                 foreach(string str in levelLines)
                 {
@@ -58,42 +47,30 @@ namespace LevelEditor
                 Application.Restart();
             }
         }
-        
-        private bool AddEntityToMap(EntityType type)
+
+        private void SaveLevel()
         {
-            switch (type)
+            try
             {
-                case EntityType.wall:
-                    
-                    break;
-                case EntityType.spawnpoint:
-
-                    break;
-                case EntityType.money:
-
-                    break;
-                case EntityType.xp:
-
-                    break;
-                case EntityType.water:
-
-                    break;
-                case EntityType.bot_horizontal:
-
-                    break;
-                case EntityType.bot_vertical:
-
-                    break;
-                case EntityType.bot_advanced:
-
-                    break;
-                case EntityType.easteregg_money:
-
-                    break;
+                this.Opacity = 0.5;
+                string[] allLines = new string[mapEditor.Controls.Count];
+                int num = 0;
+                foreach (lineControl ctrl in mapEditor.Controls)
+                {
+                    for (int i = 39; i >= 0; i--)
+                        allLines[num] += ctrl.Controls[i].Text;
+                    num++;
+                }
+                File.WriteAllLines(levelFileName, allLines);
+                this.Opacity = 1;
             }
-            return true;
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "FATAL ERROR", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                Application.Restart();
+            }
         }
-        
+
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AboutWnd aboutWnd = new AboutWnd();
@@ -137,6 +114,11 @@ namespace LevelEditor
             foreach(lineControl ctrl in mapEditor.Controls)
                 foreach (TextBox tb in ctrl.Controls)
                     tb.Text = " ";
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveLevel();
         }
     }
 }

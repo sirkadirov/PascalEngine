@@ -46,8 +46,8 @@
             this.mapHeight = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.wizardPage1 = new CristiPotlog.Controls.WizardPage();
             this.welcomePage = new CristiPotlog.Controls.WizardPage();
+            this.wizardPage1 = new CristiPotlog.Controls.WizardPage();
             this.wizard.SuspendLayout();
             this.prefsPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -164,7 +164,7 @@
             this.mapSaveDir.ReadOnly = true;
             this.mapSaveDir.Size = new System.Drawing.Size(293, 20);
             this.mapSaveDir.TabIndex = 8;
-            this.mapSaveDir.Text = "C:\\Program Files (x86)\\SirkadirovLLC\\PascalEngine\\bin-win32";
+            this.mapSaveDir.Text = "<APPLICATION FOLDER>";
             // 
             // mapName
             // 
@@ -209,10 +209,11 @@
             0,
             0});
             this.mapWidth.Name = "mapWidth";
+            this.mapWidth.ReadOnly = true;
             this.mapWidth.Size = new System.Drawing.Size(357, 20);
             this.mapWidth.TabIndex = 5;
             this.mapWidth.Value = new decimal(new int[] {
-            59,
+            40,
             0,
             0,
             0});
@@ -262,6 +263,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Map name:";
             // 
+            // welcomePage
+            // 
+            this.welcomePage.Description = resources.GetString("welcomePage.Description");
+            this.welcomePage.Location = new System.Drawing.Point(0, 0);
+            this.welcomePage.Name = "welcomePage";
+            this.welcomePage.Size = new System.Drawing.Size(529, 341);
+            this.welcomePage.Style = CristiPotlog.Controls.WizardPageStyle.Welcome;
+            this.welcomePage.TabIndex = 10;
+            this.welcomePage.Title = "Map creation wizard";
+            // 
             // wizardPage1
             // 
             this.wizardPage1.Description = "Please, confirm your choose! If you ready to start creating the level, click on O" +
@@ -272,16 +283,6 @@
             this.wizardPage1.Style = CristiPotlog.Controls.WizardPageStyle.Finish;
             this.wizardPage1.TabIndex = 12;
             this.wizardPage1.Title = "Confirmation";
-            // 
-            // welcomePage
-            // 
-            this.welcomePage.Description = resources.GetString("welcomePage.Description");
-            this.welcomePage.Location = new System.Drawing.Point(0, 0);
-            this.welcomePage.Name = "welcomePage";
-            this.welcomePage.Size = new System.Drawing.Size(529, 341);
-            this.welcomePage.Style = CristiPotlog.Controls.WizardPageStyle.Welcome;
-            this.welcomePage.TabIndex = 10;
-            this.welcomePage.Title = "Map creation wizard";
             // 
             // NewMapWizard
             // 
